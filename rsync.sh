@@ -16,6 +16,10 @@
 # It does not matter whether dest-folder has a closing "/" or not
 rsync --recursive username@server:/root/source-folder/ /root/dest-folder/
 
+# If you are transferring from your local computer to a server, you just switch
+# the source and destination elements
+rsync --recursive /root/source-folder/ username@server:/root/dest-folder/
+
 # Source has no ending "/"
 # The folder source-folder itself and all its contents will be copied
 # INSIDE dest-folder. It does not matter whether dest-folder has a closing "/" or not
